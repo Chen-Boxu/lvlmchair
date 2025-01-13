@@ -1,0 +1,51 @@
+nohup: ignoring input
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/transformers/models/llava/configuration_llava.py:100: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+Initializing Chat
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.62s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.51s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.39s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.43s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+LlamaModel is using LlamaSdpaAttention, but `torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to the manual attention implementation, but specifying the manual implementation will be required from Transformers version v5.0.0 onwards. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
+/workspace/LVLM-Stethoscope-main/demo_meta.py:231: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  fig.tight_layout()
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/processing_utils.py:138: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  plt.savefig(output_bytes, format=fmt)
+/workspace/LVLM-Stethoscope-main/demo_meta.py:231: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  fig.tight_layout()
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/processing_utils.py:138: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  plt.savefig(output_bytes, format=fmt)
+Traceback (most recent call last):
+  File "/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/routes.py", line 735, in predict
+    output = await route_utils.call_process_api(
+  File "/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/route_utils.py", line 276, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/blocks.py", line 1945, in process_api
+    data = await self.postprocess_data(block_fn, result["prediction"], state)
+  File "/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/blocks.py", line 1718, in postprocess_data
+    self.validate_outputs(block_fn, predictions)  # type: ignore
+  File "/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/blocks.py", line 1684, in validate_outputs
+    raise ValueError(
+ValueError: An event handler (gradio_reset) didn't receive enough output values (needed: 15, received: 2).
+Wanted outputs:
+    [<gradio.components.chatbot.Chatbot object at 0x7fe5b814ee30>, <gradio.components.textbox.Textbox object at 0x7fe5b814eb90>, <gradio.components.button.Button object at 0x7fe5b817c4c0>, <gradio.components.radio.Radio object at 0x7fe5b817ed10>, <gradio.components.slider.Slider object at 0x7fe5b817db10>, <gradio.components.plot.Plot object at 0x7fe5b817c490>, <gradio.components.plot.Plot object at 0x7fe5b817dc90>, <gradio.components.bar_plot.BarPlot object at 0x7fe5b817f0a0>, <gradio.components.bar_plot.BarPlot object at 0x7fe5b817ef50>, <gradio.components.textbox.Textbox object at 0x7fe5b817f040>, <gradio.components.plot.Plot object at 0x7fe5b817c070>, <gradio.components.state.State object at 0x7fe5b814f610>, <gradio.components.state.State object at 0x7fe5b812dd20>, <gradio.components.plot.Plot object at 0x7fe5b817cd00>, <gradio.components.slider.Slider object at 0x7fe5b817c3d0>]
+Received outputs:
+    [{'value': None, '__type__': 'update'}, {'placeholder': 'Please upload your image first', 'interactive': False, '__type__': 'update'}]
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/workspace/LVLM-Stethoscope-main/demo_meta.py:231: UserWarning: Glyph 38642 (\N{CJK UNIFIED IDEOGRAPH-96F2}) missing from current font.
+  fig.tight_layout()
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/processing_utils.py:138: UserWarning: Glyph 38642 (\N{CJK UNIFIED IDEOGRAPH-96F2}) missing from current font.
+  plt.savefig(output_bytes, format=fmt)
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/workspace/LVLM-Stethoscope-main/demo_meta.py:231: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  fig.tight_layout()
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/processing_utils.py:138: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  plt.savefig(output_bytes, format=fmt)
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/workspace/LVLM-Stethoscope-main/demo_meta.py:231: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  fig.tight_layout()
+/opt/conda/envs/lvlm-ss/lib/python3.10/site-packages/gradio/processing_utils.py:138: UserWarning: Glyph 10134 (\N{HEAVY MINUS SIGN}) missing from current font.
+  plt.savefig(output_bytes, format=fmt)
